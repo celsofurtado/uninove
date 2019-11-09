@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <div class="navbar navbar-expand navbar-light bg-info text-white">
+      <h1>Escola 1.0</h1>
+    </div>
+
+    <div class="container mt-3">
+      <h3>Média escolar</h3>
+      <hr />
+
+      <!-- Exibir lista de erros -->
+      <ul id="lista-erros" class="alert-warning text-danger"></ul>
+
+      <form id="formulario">
+        <div class="row">
+          <div class="col">
+            <label for="nome">Nome do aluno:</label>
+            <input type="text" class="form-control" placeholder="Nome do aluno" id="nome" name="nome">
+          </div>
+          <div class="col">
+            <label for="nota1">Nota 1:</label>
+            <input type="text" class="form-control" placeholder="Nota 1" id="nota1" name="nota1">
+          </div>
+          <div class="col">
+            <label for="nota2">Nota 2:</label>
+            <input type="text" class="form-control" placeholder="Nota 2" id="nota2" name="nota2">
+          </div>
+          <div class="col">
+            <label>&nbsp;</label>
+            <button class="form-control btn btn-success" id="bt-adicionar">Adicionar aluno</button>
+          </div>
+        </div>
+      </form>
+
+      <hr />
+
+      <table class="table table-bordered mt-3" id="tabela">
+        <thead class="table-info">
+          <th>Aluno</th>
+          <th>Nota 1</th>
+          <th>Nota 2</th>
+          <th>Média</th>
+          <th>Situação</th>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+
+    </div>
+    
+    <script src="./js/validacao.js"></script>
+    <script src="./js/calculo.js"></script>
+    <script src="./js/formulario.js"></script>
+    
+
+  </body>
+</html>
